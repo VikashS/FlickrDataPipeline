@@ -1,0 +1,5 @@
+FROM bitnami/spark:3.5.3
+WORKDIR /app
+COPY . .
+RUN pip install --no-cache-dir -r requirements.txt
+CMD ["/opt/bitnami/spark/bin/spark-submit", "--master", "local[*]", "scripts/run_processor.py"]
