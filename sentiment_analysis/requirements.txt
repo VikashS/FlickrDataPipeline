@@ -1,0 +1,10 @@
+pyspark==3.5.3
+requests==2.25.1
+kafka-python==2.0.2
+loguru
+
+# pytest
+
+pytest
+black
+pylint
